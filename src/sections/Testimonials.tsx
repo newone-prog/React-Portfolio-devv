@@ -61,22 +61,11 @@ const Testimonials = () => {
         </blockquote>
 
         {/* Author */}
-        <div className="reveal-item flex flex-col md:flex-row items-center justify-center gap-6">
-          {testimonialsConfig.authorImage && (
-            <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-white/20">
-              <img
-                src={testimonialsConfig.authorImage}
-                alt={testimonialsConfig.authorName}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          )}
-          <div className="text-center md:text-left">
-            <p className="museo-headline text-white text-lg">{testimonialsConfig.authorName}</p>
-            <p className="museo-label text-white/50">
-              {testimonialsConfig.authorTitle}
-            </p>
-          </div>
+        <div className="text-center md:text-left">
+          <p className="museo-headline text-white text-lg">{testimonialsConfig.authorName}</p>
+          <p className="museo-label text-white/50">
+            {testimonialsConfig.authorTitle}
+          </p>
         </div>
 
         {/* Decorative Line */}
