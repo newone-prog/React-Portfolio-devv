@@ -101,6 +101,19 @@ const Footer = () => {
             )}
           </div>
 
+          {/* Contact Me CTA */}
+          <div className="flex justify-center mt-4 mb-20">
+            <a
+              href="/contact"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-cursor="hover"
+              className="museo-label text-white border border-white/20 px-10 py-4 hover:bg-white hover:text-[#8c8c91] transition-all duration-300 inline-block"
+            >
+              Contact Me
+            </a>
+          </div>
+
           {/* Bottom Bar */}
           <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/10">
             <p className="museo-body text-white/40 text-xs mb-4 md:mb-0">

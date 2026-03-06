@@ -63,6 +63,21 @@ export interface ExhibitionsConfig {
   exhibitions: Exhibition[];
 }
 
+export interface Project {
+  id: number;
+  title: string;
+  image: string;
+  date: string;
+  link: string;
+}
+
+export interface ProjectsConfig {
+  label: string;
+  headline: string;
+  ctaText: string;
+  projects: Project[];
+}
+
 export interface Collection {
   id: number;
   title: string;
@@ -82,6 +97,8 @@ export interface TestimonialsConfig {
   quote: string;
   authorName: string;
   authorTitle: string;
+  ctaText?: string;
+  ctaLink?: string;
 }
 
 export interface InfoCard {
@@ -196,6 +213,28 @@ export const exhibitionsConfig: ExhibitionsConfig = {
   ],
 };
 
+export const projectsConfig: ProjectsConfig = {
+  label: "Projects",
+  headline: "Featured Work",
+  ctaText: "View GitHub",
+  projects: [
+    {
+      id: 1,
+      title: "Air-DJ",
+      image: "/images/air-dj.png",
+      date: "2026",
+      link: "https://github.com/newone-prog/Air-DJ",
+    },
+    {
+      id: 2,
+      title: "SentimentAI",
+      image: "/images/sentiment-ai.png",
+      date: "2026",
+      link: "https://sentimentai-kappa.vercel.app/",
+    },
+  ],
+};
+
 export const collectionsConfig: CollectionsConfig = {
   label: "Experience",
   headline: "Professional Journey",
@@ -215,6 +254,8 @@ export const testimonialsConfig: TestimonialsConfig = {
   quote: " Fintech & The Future of Investment Banking | SSRN verified research paper",
   authorName: "Devansh Mehrotra",
   authorTitle: "BBA-IBM | United University",
+  ctaText: "Read Paper",
+  ctaLink: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6164088",
 };
 
 export const visitConfig: VisitConfig = {

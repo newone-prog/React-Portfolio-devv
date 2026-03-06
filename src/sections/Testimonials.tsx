@@ -61,12 +61,27 @@ const Testimonials = () => {
         </blockquote>
 
         {/* Author */}
-        <div className="text-center md:text-left">
+        <div className="reveal-item text-center md:text-left">
           <p className="museo-headline text-white text-lg">{testimonialsConfig.authorName}</p>
           <p className="museo-label text-white/50">
             {testimonialsConfig.authorTitle}
           </p>
         </div>
+
+        {/* CTA Button */}
+        {testimonialsConfig.ctaLink && testimonialsConfig.ctaText && (
+          <div className="reveal-item mt-12 flex justify-center">
+            <a
+              href={testimonialsConfig.ctaLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-cursor="hover"
+              className="museo-label text-white border border-white/20 px-10 py-4 hover:bg-white hover:text-[#8c8c91] transition-all duration-300 inline-block"
+            >
+              {testimonialsConfig.ctaText}
+            </a>
+          </div>
+        )}
 
         {/* Decorative Line */}
         <div className="reveal-item mt-24 flex items-center justify-center">

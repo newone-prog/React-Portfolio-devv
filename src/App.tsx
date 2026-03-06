@@ -15,6 +15,7 @@ import Hero from './sections/Hero';
 import About from './sections/About';
 import Exhibitions from './sections/Exhibitions';
 import Collections from './sections/Collections';
+import Projects from './sections/Projects';
 import Testimonials from './sections/Testimonials';
 import Visit from './sections/Visit';
 import Footer from './sections/Footer';
@@ -48,7 +49,8 @@ function App() {
       { selector: '#about', color: '#050505' },
       { selector: '#education', color: '#050505' },
       { selector: '#experience', color: '#f0f0f0' },
-      { selector: '#projects', color: '#8c8c91' },
+      { selector: '#projects', color: '#050505' },
+      { selector: '#testimonials', color: '#8c8c91' },
       { selector: '#certifications', color: '#050505' },
       { selector: '#footer-section', color: '#8c8c91' },
     ];
@@ -107,8 +109,13 @@ function App() {
         <Collections />
       </div>
 
-      {/* Projects Section (Testimonials) */}
+      {/* Projects Section */}
       <div id="projects">
+        <Projects />
+      </div>
+
+      {/* Testimonials */}
+      <div id="testimonials">
         <Testimonials />
       </div>
 
