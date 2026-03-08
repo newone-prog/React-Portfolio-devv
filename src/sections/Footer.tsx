@@ -72,6 +72,7 @@ const Footer = () => {
                     <li key={i}>
                       <a
                         href={link.href}
+                        {...(link.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                         data-cursor="hover"
                         className="group museo-body text-white/70 text-sm hover:text-white transition-colors flex items-center gap-2"
                       >

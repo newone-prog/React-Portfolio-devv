@@ -77,7 +77,7 @@ const Hero = () => {
         <div className="museo-label text-white text-[13px] tracking-widest uppercase md:normal-case md:text-base md:text-white/70">{heroConfig.brandLeft} {heroConfig.brandRight}</div>
         <div className="flex flex-wrap justify-center items-center gap-2 md:gap-8 mt-2 md:mt-0">
           {heroConfig.navLinks.map((link, i) => (
-            <a key={i} href={link.href} className="museo-label text-white md:text-white/70 hover:text-white transition-colors uppercase md:normal-case text-[9px] sm:text-[10px] md:text-base md:tracking-normal">{link.label}</a>
+            <a key={i} href={link.href} {...(link.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="museo-label text-white md:text-white/70 hover:text-white transition-colors uppercase md:normal-case text-[9px] sm:text-[10px] md:text-base md:tracking-normal">{link.label}</a>
           ))}
         </div>
       </nav>
