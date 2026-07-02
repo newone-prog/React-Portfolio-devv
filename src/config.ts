@@ -97,6 +97,7 @@ export interface TestimonialsConfig {
   quote: string;
   authorName: string;
   authorTitle: string;
+  authorImage?: string;
   ctaText?: string;
   ctaLink?: string;
 }
