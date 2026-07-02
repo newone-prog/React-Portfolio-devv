@@ -142,7 +142,7 @@ export const heroConfig: HeroConfig = {
   brandLeft: "Devansh",
   brandRight: "Mehrotra",
   tagline: "Finance Student & Aspiring Investment Banker",
-  since: "Since 2024",
+  since: "Since 2004",
   email: "[devanshmehrotra2190@gmail.com]",
   scrollText: "Scroll to explore",
   copyrightText: "© 2024 Devv",
@@ -156,7 +156,7 @@ export const heroConfig: HeroConfig = {
   ],
   socialLinks: [
     { label: "LinkedIn", href: "https://www.linkedin.com/in/devanshmehrotra1508/" },
-    { label: "GitHub", href: "https://github.com" },
+    { label: "GitHub", href: "https://github.com/newone-prog" },
     { label: "Twitter", href: "https://twitter.com" },
   ],
 };
@@ -175,8 +175,8 @@ export const aboutConfig: AboutConfig = {
     { src: "/images/gallery-6.jpg", alt: "Project Planning", label: "Strategy" },
   ],
   stats: [
-    { value: "1+", label: "Months Experience" },
-    { value: "4+", label: "Projects Completed" },
+    { value: "2+", label: "Months Experience" },
+    { value: "7+", label: "Projects Completed" },
     { value: "6+", label: "Creative Tools" },
     { value: "4+", label: "Hands On Models" },
   ],
@@ -190,26 +190,20 @@ export const exhibitionsConfig: ExhibitionsConfig = {
     {
       id: 1,
       title: "Higher Senior Secondary (Class XII); Affiliated to CBSE Board",
-      image: "/images/tagore-school.png",
+      image: "/images/school-building.jpg",
       date: "Tagore Public School | 2021 - 2023",
     },
     {
       id: 2,
       title: "Senior Secondary (Class X); Affiliated to; CBSE Board",
-      image: "/images/tagore-school-2.png",
+      image: "/images/school-building.jpg",
       date: "Tagore Public School | 2007-2021",
     },
     {
       id: 3,
       title: "BBA-IBM",
-      image: "/images/education-3.jpg",
+      image: "/images/united-university-prayagraj.webp",
       date: "United University | 2024 - 2027",
-    },
-    {
-      id: 4,
-      title: "MBA",
-      image: "/images/mba-education.png",
-      date: "Amazon Web Services | 2020",
     },
   ],
 };
@@ -231,7 +225,7 @@ export const projectsConfig: ProjectsConfig = {
       title: "SentimentAI",
       image: "/images/sentiment-ai.png",
       date: "2026",
-      link: "https://sentimentai-kappa.vercel.app/",
+      link: "https://www.stocksentimentai.app/",
     },
   ],
 };
@@ -264,23 +258,7 @@ export const visitConfig: VisitConfig = {
   headline: "Skills & Certifications",
   description: "Continuously expanding my skill set through professional certifications and hands-on experience with cutting-edge technologies.",
   ctaText: "Download CV",
-  infoCards: [
-    {
-      icon: "Award",
-      title: "Skills",
-      content: "Quantitative Analysis (Finance), Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Power BI, IBM SPSS ",
-    },
-    {
-      icon: "Cloud",
-      title: "Certifications (SEBI | NISM)",
-      content: "National Finance Literacy Quiz 2026 , Investor Certification Examination, National Finance Literacy Quiz 2025",
-    },
-    {
-      icon: "Award",
-      title: "Certifications (IBM)",
-      content: "Business Intelligence (BI), Data Visualization with Python",
-    },
-  ],
+  infoCards: [],
 };
 
 export const footerConfig: FooterConfig = {
@@ -289,7 +267,7 @@ export const footerConfig: FooterConfig = {
   brandDescription: "Finance Student & Aspiring Investment Banker crafting exceptional digital experiences. Let's build something amazing together.",
   socialLinks: [
     { label: "LinkedIn", href: "www.linkedin.com/in/devanshmehrotra1508" },
-    { label: "GitHub", href: "https://github.com" },
+    { label: "GitHub", href: "https://github.com/newone-prog" },
     { label: "Twitter", href: "https://twitter.com" },
   ],
   quickLinks: [

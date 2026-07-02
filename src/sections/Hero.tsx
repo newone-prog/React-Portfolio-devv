@@ -76,8 +76,10 @@ const Hero = () => {
       >
         <div className="museo-label text-white text-[13px] tracking-widest uppercase md:normal-case md:text-base md:text-white/70">{heroConfig.brandLeft} {heroConfig.brandRight}</div>
         <div className="flex flex-wrap justify-center items-center gap-2 md:gap-8 mt-2 md:mt-0">
-          {heroConfig.navLinks.map((link, i) => (
-            <a key={i} href={link.href} {...(link.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="museo-label text-white md:text-white/70 hover:text-white transition-colors uppercase md:normal-case text-[9px] sm:text-[10px] md:text-base md:tracking-normal">{link.label}</a>
+          {heroConfig.navLinks.filter(l => l.label === 'Creative').map((link, i) => (
+            <a key={i} href={link.href} target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 bg-white/10 border border-white/20 hover:bg-white hover:text-black rounded-full transition-all duration-300 text-white museo-label text-[10px] md:text-xs uppercase tracking-widest backdrop-blur-md">
+              {link.label} Portfolio
+            </a>
           ))}
         </div>
       </nav>
@@ -110,7 +112,7 @@ const Hero = () => {
         )}
         <div className="flex items-center gap-3 mt-5">
           {heroConfig.socialLinks.map((link, i) => (
-            <a key={i} href={link.href} className="museo-label text-white hover:text-white/80 transition-colors text-[13px] uppercase tracking-[0.05em]">
+            <a key={i} href={link.href} target="_blank" rel="noopener noreferrer" className="museo-label text-white hover:text-white/80 transition-colors text-[13px] uppercase tracking-[0.05em]">
               {link.label.toUpperCase() === 'LINKEDIN' ? 'LINKDIN' : link.label.toUpperCase()}
             </a>
           ))}
@@ -123,7 +125,7 @@ const Hero = () => {
           {/* Left text block */}
           <div
             ref={leftTextRef}
-            className="flex flex-col items-end text-right flex-1 pr-6 lg:pr-12 will-change-transform"
+            className="flex flex-col items-end text-right flex-1 pr-3 lg:pr-4 will-change-transform"
           >
             <h1 className="museo-headline text-white text-[9vw] lg:text-[7vw] leading-[0.85]">
               {heroConfig.brandLeft}
@@ -133,7 +135,7 @@ const Hero = () => {
             </p>
             <div className="flex items-center gap-4 mt-6">
               {heroConfig.socialLinks.map((link, i) => (
-                <a key={i} href={link.href} className="museo-label text-white/40 hover:text-white transition-colors text-[10px]" data-cursor="hover">{link.label}</a>
+                <a key={i} href={link.href} target="_blank" rel="noopener noreferrer" className="museo-label text-white/40 hover:text-white transition-colors text-[10px]" data-cursor="hover">{link.label}</a>
               ))}
             </div>
           </div>
@@ -141,7 +143,7 @@ const Hero = () => {
           {/* Right text block */}
           <div
             ref={rightTextRef}
-            className="flex flex-col items-start text-left flex-1 pl-6 lg:pl-12 will-change-transform"
+            className="flex flex-col items-start text-left flex-1 pl-3 lg:pl-4 will-change-transform"
           >
             <h1 className="museo-headline text-white text-[9vw] lg:text-[7vw] leading-[0.85]">
               {heroConfig.brandRight}

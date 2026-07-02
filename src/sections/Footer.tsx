@@ -53,6 +53,8 @@ const Footer = () => {
                     <a
                       key={i}
                       href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       data-cursor="hover"
                       className="w-10 h-10 border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/40 transition-colors"
                     >
