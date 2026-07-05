@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Analytics } from '@vercel/analytics/react';
 import { ArrowUpRight } from 'lucide-react';
 import useLenis from '../hooks/useLenis';
 import useCustomCursor from '../hooks/useCustomCursor';
@@ -143,6 +144,9 @@ const Contact = () => {
                     </div>
                 </form>
             </div>
+
+            {/* Vercel Web Analytics */}
+            <Analytics />
         </div>
     );
 };
